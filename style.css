@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#connectWallet {
+    background: #16a34a;
+}
+
+#connectWallet:hover {
+    background: #15803d;
+}
+
+#propertyResult,
+#historyResult {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    margin-top: 40px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

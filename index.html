@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏠 Property Registration System</h1>
+        <p>Blockchain-Based Property Registration & Ownership Transfer</p>
+
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="walletAddress">Wallet not connected</p>
+    </header>
+
+    <main>
+
+        <!-- REGISTER PROPERTY -->
+        <section class="card">
+            <h2>🏠 Register Property</h2>
+
+            <input type="number" id="propertyId" placeholder="Property ID">
+            <input type="text" id="location" placeholder="Property Location">
+            <input type="text" id="ownerAddress" placeholder="Owner Address">
+
+            <button id="registerProperty">
+                Register Property
+            </button>
+
+            <p id="registerStatus"></p>
+        </section>
+
+
+        <!-- VIEW PROPERTY -->
+        <section class="card">
+            <h2>🔍 View Property</h2>
+
+            <input type="number" id="viewPropertyId" placeholder="Enter Property ID">
+
+            <button id="viewProperty">
+                View Property
+            </button>
+
+            <div id="propertyResult"></div>
+        </section>
+
+
+        <!-- REQUEST TRANSFER -->
+        <section class="card">
+            <h2>🔄 Request Ownership Transfer</h2>
+
+            <input type="number" id="transferPropertyId"
+                   placeholder="Property ID">
+
+            <input type="text" id="newOwner"
+                   placeholder="New Owner Address">
+
+            <button id="requestTransfer">
+                Request Transfer
+            </button>
+
+            <p id="transferStatus"></p>
+        </section>
+
+
+        <!-- APPROVE TRANSFER -->
+        <section class="card">
+            <h2>✅ Approve Transfer</h2>
+
+            <input type="number" id="approvePropertyId"
+                   placeholder="Property ID">
+
+            <button id="approveTransfer">
+                Approve Transfer
+            </button>
+
+            <p id="approveStatus"></p>
+        </section>
+
+
+        <!-- REJECT TRANSFER -->
+        <section class="card">
+            <h2>❌ Reject Transfer</h2>
+
+            <input type="number" id="rejectPropertyId"
+                   placeholder="Property ID">
+
+            <button id="rejectTransfer">
+                Reject Transfer
+            </button>
+
+            <p id="rejectStatus"></p>
+        </section>
+
+
+        <!-- OWNERSHIP HISTORY -->
+        <section class="card">
+            <h2>📜 Ownership History</h2>
+
+            <input type="number" id="historyPropertyId"
+                   placeholder="Property ID">
+
+            <input type="number" id="historyIndex"
+                   placeholder="History Index (0, 1, 2...)">
+
+            <button id="viewHistory">
+                View History
+            </button>
+
+            <div id="historyResult"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Blockchain-Based Property Registration System</p>
+    </footer>
+
+
+    <!-- Ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
